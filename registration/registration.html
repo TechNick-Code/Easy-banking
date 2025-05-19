@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration for Tolxxy Bank</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="../images/logo img.svg" alt="Tolxxy Bank Logo">
+        <h3>TOLXXY BANK</h3>
+    </div>
+    <div class="container">
+        <form class="form-container">
+            <div class="username">
+                <div class="form-group">
+                   <label for="firstName">First Name</label>
+                   <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                   <label for="lastName">Last Name</label>
+                   <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="accountNumber">Account Number</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="bvn">BVN</label>
+                <input type="text" id="bvn" name="bvn" required>
+            </div>
+            <button type="submit" onclick="authenticate()" class="registration-button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
