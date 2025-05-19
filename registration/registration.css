@@ -26,18 +26,17 @@ body {
 .logo {
     display: flex;
     padding: 2em 10em;
-    margin-bottom: 2em;
 }
 
 .logo h3 {
     color: #0f172a; /* Dark text for "TOLXXY BANK" */
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 
 .logo img {
     width: 20px;
-    height: 15px;
+    height: 20px;
     margin-right: 10px;
 }
 
@@ -46,6 +45,7 @@ body {
     flex-direction: column;
     gap: 18px;
     width: 45%;
+    margin-top: 2em
 }
 
 .username {
@@ -110,6 +110,17 @@ body {
 .registration-button:active {
     background-color: #1e40af;
     transform: translateY(0);
+}
+
+form p {
+    color: rgb(50, 50, 50);
+    margin: 1em 0
+}
+
+form p a {
+    color: #3b82f6;
+    text-decoration: none;
+
 }
 
 /* @media (max-width: 768px) {
