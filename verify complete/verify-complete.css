@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #317FE5;
+    --secondary-color: #FAFAFA;
+    --color--white: #ffffff;
+    --text-color: #373737;
+    --button-color: #317FE5;
+    --button-text-color: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+.logo {
+    display: flex;
+    padding: 2em 10em 0;
+}
+
+.logo h3 {
+    color: #0f172a; /* Dark text for "TOLXXY BANK" */
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: var(--text-color)
+}
+
+.container img {
+    width: 330px;
+    height: 300px;
+    margin-bottom: 0
+}
+
+.container h1 {
+    margin-top: -1em
+}
+
+.check-box {
+    display: flex;
+    margin: 2em 0 1em
+}
+
+.check-box .box {
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6ffd4;
+}
+
+.check-box .box i {
+    font-size: 3.5em;
+    font-weight: 200;
+    color: #4caf50;
+}
+
+.verify-button {
+    margin: 2em 0;
+    border: none;
+    padding: 1.2em 6em;
+    color:var(--button-text-color);
+    border-radius: 6px;
+    background-color: var(--button-color);
+}
+
+
