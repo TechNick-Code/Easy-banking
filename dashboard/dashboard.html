@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <div class="left-container">
+            <div class="logo">
+                <img src="../images/logo img.svg" alt="Tolxxy Bank Logo">
+                <h3>TOLXXY BANK</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li onclick="window.location.href='dashboard.html'"><i class="fa fa-dashboard"></i>Dashboard</li>
+                    <li onclick="window.location.href='payment.html'"><i class="fa fa-money"></i>Payment</li>
+                    <li onclick="window.location.href='recent-transaction.html'"><i class="fa fa-refresh"></i>Recent Transaction</li>
+                    <li onclick="window.location.href='transfer.html'"><i class="fa fa-send"></i>Transfer</li>
+                </ul>
+
+                <ul>
+                    <li onclick="window.location.href='settings.html'"><i class="fa fa-gear"></i>Settings</li>
+                    <li onclick="window.location.href='logout.html'"><i class="fa fa-sign-out"></i>Log out</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="profile">
+                <div class="left-profile">
+                <img src="../images/verify-img.png" alt="">
+                <div class="profile-name">
+                    <h3>Hello <span>Tolxxy</span></h3>
+                    <p>Welcome back, we missed you</p>
+                </div>
+            </div>
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                </div>
+            </div>
+            <div class="account-section">
+                <div class="account-balance">
+                    <div class="balance">
+                        <p>Available balance</p>
+                        <h2><img src="../images/naira.svg" alt="">400.00</h2>
+                    </div>
+                        <i class="fa fa-eye"></i>
+                </div>
+                <div class="mid">
+                    ykykskyksyuk
+                </div>
+                <div class="right-box">
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="transfer">
+                    <i class="fa fa-money"></i>
+                    <div class="text">
+                        <h4>Transfer</h4> 
+                        <p>Transfer to other banks</p>
+                    </div>
+                </div>
+                <div class="withdraw">
+                    <i class="fa fa-money"></i>
+                    <div class="text">
+                        <h4>Withdraw</h4> 
+                        <p>Widthdraw to your account</p>
+                    </div>
+                </div>
+                <div class="deposit">
+                    <i class="fa fa-money"></i>
+                    <div class="text">
+                        <h4>Deposit</h4> 
+                        <p>Deposit money from other banks</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="note">Recent Transactions</h3>
+            <div class="recent">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Time & date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>transfer</td>
+                            <td>transfered to Nicholas</td>
+                            <td>#5,000</td>
+                            <td>23rd May 2025</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>transfer</td>
+                            <td>transfered to Nicholas</td>
+                            <td>#5,000</td>
+                            <td>23rd May 2025</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>transfer</td>
+                            <td>transfered to Nicholas</td>
+                            <td>#5,000</td>
+                            <td>23rd May 2025</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>transfer</td>
+                            <td>transfered to Nicholas</td>
+                            <td>#5,000</td>
+                            <td>23rd May 2025</td>
+                            <td>Completed</td>
+                        </tr>
+                        
+                    </tbody>
+
+
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
