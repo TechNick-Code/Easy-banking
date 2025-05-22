@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 </head>
 <body>
     <main>
@@ -16,15 +17,15 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li onclick="window.location.href='dashboard.html'"><i class="fa fa-dashboard"></i>Dashboard</li>
-                    <li onclick="window.location.href='payment.html'"><i class="fa fa-money"></i>Payment</li>
-                    <li onclick="window.location.href='recent-transaction.html'"><i class="fa fa-refresh"></i>Recent Transaction</li>
-                    <li onclick="window.location.href='transfer.html'"><i class="fa fa-send"></i>Transfer</li>
+                    <li onclick="window.location.href='dashboard.html'"><i class="ri-dashboard-line"></i>Dashboard</li>
+                    <li onclick="window.location.href='payment.html'"><i class="ri-currency-line"></i>Payment</li>
+                    <li onclick="window.location.href='recent-transaction.html'"><i class="ri-history-line"></i>Recent Transaction</li>
+                    <li onclick="window.location.href='transfer.html'"><i class="ri-exchange-dollar-line"></i>Transfer</li>
                 </ul>
 
                 <ul>
-                    <li onclick="window.location.href='settings.html'"><i class="fa fa-gear"></i>Settings</li>
-                    <li onclick="window.location.href='logout.html'"><i class="fa fa-sign-out"></i>Log out</li>
+                    <li onclick="window.location.href='settings.html'"><i class="ri-settings-3-line"></i>Settings</li>
+                    <li onclick="window.location.href='logout.html'" id="logout"><i class="ri-logout-box-line"></i>Log out</li>
                 </ul>
             </div>
         </div>
@@ -39,7 +40,7 @@
                 </div>
             </div>
                 <div class="notification">
-                    <i class="fa fa-bell"></i>
+                    <i class="ri-notification-2-line"></i>
                 </div>
             </div>
             <div class="account-section">
@@ -48,33 +49,33 @@
                         <p>Available balance</p>
                         <h2><img src="../images/naira.svg" alt="">400.00</h2>
                     </div>
-                        <i class="fa fa-eye"></i>
+                        <i class="ri-eye-line"></i>
                 </div>
                 <div class="mid">
-                    ykykskyksyuk
+                    <p>Crypto wallet Balance</p>
+                    <h2><img src="../images/naira-black.svg" alt="">20,000</h2>
+                    
                 </div>
-                <div class="right-box">
-
-                </div>
+        
             </div>
 
             <div class="card">
                 <div class="transfer">
-                    <i class="fa fa-money"></i>
+                    <i class="ri-exchange-dollar-line"></i>
                     <div class="text">
                         <h4>Transfer</h4> 
                         <p>Transfer to other banks</p>
                     </div>
                 </div>
                 <div class="withdraw">
-                    <i class="fa fa-money"></i>
+                    <i class="ri-wallet-3-line"></i>
                     <div class="text">
                         <h4>Withdraw</h4> 
                         <p>Widthdraw to your account</p>
                     </div>
                 </div>
                 <div class="deposit">
-                    <i class="fa fa-money"></i>
+                    <i class="ri-safe-2-line"></i>
                     <div class="text">
                         <h4>Deposit</h4> 
                         <p>Deposit money from other banks</p>
