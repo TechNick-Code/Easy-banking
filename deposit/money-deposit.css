@@ -62,21 +62,25 @@ main{
 
 .menu ul li{
     list-style-type: none;
-    color: var(--text-color);
-    padding: 10px 1.5em ;
     width: 90%;
     margin: 0.7em 0;
-    border-radius: 8px;
-    cursor: pointer;
 }
 
-.menu ul li:hover {
+.menu ul li a {
+    color: var(--text-color);
+    padding: 10px 1.5em ;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%
+}
+
+.menu ul li a:hover {
     background-color: var(--button-color);
     color: white;
     transition: all ease-in-out .3s;
     padding-left: 2.7em;
 }
-
 .menu ul li i {
     margin-right: 1em
 }
@@ -98,6 +102,10 @@ main{
     padding: 0 2em;
 }
 
+.right-container h1 {
+    font-weight: 500;
+    margin: 1em 0
+}
 
 .select-bank {
     padding: 1em 15px;
@@ -125,14 +133,62 @@ form input {
     margin: 2em 0
 }
 
-.radio {
-    background-color: red;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 20%
+.radio-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.radio input {
+.radio-container input[type="radio"] {
+    display: none
+}
 
+label {
+    position: relative;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    margin: 0.3em 0
+}
+
+label::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border: 0.16em solid #373737;
+    border-radius: 2em;
+    margin: 0 1em;
+}
+
+input[type="radio"]:checked + label::before {
+    height: 0.6em;
+    width: 0.6em;
+    border: 0.3em solid #4d94f2;
+    background-color: #fff;
+}
+
+form button {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 2.5em 0;
+    width: 50%;
+    background-color: #4d94f2;
+    color: #fff;
+    font-weight: 600;
+    transition: all ease .3s;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    background-color: #3465df;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.34)
+}
+
+form button:active {
+    transform: translateY(0px);
+    box-shadow: 1px 1px 1px black;
+}
+
+i {
+    font-size: 1.2em
 }

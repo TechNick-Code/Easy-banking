@@ -17,16 +17,24 @@
                 <h3>TOLXXY BANK</h3>
             </div>
             <div class="menu">
-                <ul>
-                    <li onclick="window.location.href='account-home.html'"><i class="ri-home-3-line"></i>Home</li>
-                    <li onclick="window.location.href='beneficiaries.html'"><i class="ri-user-add-line"></i>Beneficiaries</li>
-                    <li onclick="window.location.href='recent-transaction.html'"><i class="ri-history-line"></i>Recent transactions</li>
-                    <li onclick="window.location.href='support.html'"><i class="ri-hand-heart-line"></i>Support</li>
+               <ul>
+                    <!-- <li onclick="window.location.href='account-home.html'"><i class=""></i>Home</li>
+                    <li onclick="window.location.href='beneficiaries.html'"><i class=""></i>Beneficiaries</li>
+                    <li onclick="window.location.href='recent-transaction.html'"><i class=""></i>Recent transactions</li>
+                    <li onclick="window.location.href='support.html'"><i class=""></i>Support</li> -->
+
+                    <li><a href="../dashboard/dashboard.html"><i class="ri-home-3-line"></i>Home</a></li>
+                    <li><a href=""><i class="ri-user-add-line"></i>Beneficiaries</a></li>
+                    <li><a href=""><i class="ri-history-line"></i>Recent Transactions</a></li>
+                    <li><a href=""><i class="ri-hand-heart-line"></i>Support</a></li>
                 </ul>
 
                 <ul>
-                    <li onclick="window.location.href='settings.html'"><i class="ri-settings-3-line"></i>Settings</li>
-                    <li onclick="window.location.href='logout.html'" id="logout"><i class="ri-logout-box-line"></i>Log out</li>
+                    <!-- <li onclick="window.location.href='settings.html'"><i class=""></i>Settings</li>
+                    <li onclick="window.location.href='logout.html'" ><i class=""></i>Log out</li> -->
+
+                    <li><a href=""><i class="ri-settings-3-line"></i>Settings</a></li>
+                    <li><a href="" id="logout"><i class="ri-logout-box-line"></i>Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -39,18 +47,23 @@
                     <p>Select bank </p>
                     <i class="ri-arrow-down-s-line"></i>
                 </div>
-                <input type="number" placeholder="234 XXXX XXXX XXXX">
+                <input type="number" placeholder="2345 XXXX XXXX XXXX">
 
                 <div class="low-line-entry">
                     <input type="date">
-                    <input type="number" placeholder="CVV">
+                    <input type="number" placeholder="cvv">
+                </div>
+                <div class="radio-container">
+                   <input type="radio" name="payment" id="visa"/>
+                   <label for="visa">Visa</label>
+                   <input type="radio" name="payment" id="verve"/>
+                   <label for="verve">Verve</label>
+                   <input type="radio" name="payment" id="master"/>
+                   <label for="master">Master</label>
+                    
                 </div>
 
-                <div class="radio">
-                    <input type="radio"> Visa
-                    <input type="radio"> Verve
-                    <input type="radio"> Master
-                </div>
+                <button>Proceed</button>
             </form>
         </div>
     </main>
