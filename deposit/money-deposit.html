@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolxxy-bank/Deposit</title>
+    <link rel="stylesheet" href="./money-deposit.css">
+    <link rel="icon" href="../images/logo img.svg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div class="left-container">
+            <div class="logo">
+                <img src="../images/logo img.svg" alt="Tolxxy Bank Logo">
+                <h3>TOLXXY BANK</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li onclick="window.location.href='account-home.html'"><i class="ri-home-3-line"></i>Home</li>
+                    <li onclick="window.location.href='beneficiaries.html'"><i class="ri-user-add-line"></i>Beneficiaries</li>
+                    <li onclick="window.location.href='recent-transaction.html'"><i class="ri-history-line"></i>Recent transactions</li>
+                    <li onclick="window.location.href='support.html'"><i class="ri-hand-heart-line"></i>Support</li>
+                </ul>
+
+                <ul>
+                    <li onclick="window.location.href='settings.html'"><i class="ri-settings-3-line"></i>Settings</li>
+                    <li onclick="window.location.href='logout.html'" id="logout"><i class="ri-logout-box-line"></i>Log out</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <h1>Deposit Money</h1>
+
+            <form action="">
+                <div class="select-bank">
+                    <p>Select bank </p>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <input type="number" placeholder="234 XXXX XXXX XXXX">
+
+                <div class="low-line-entry">
+                    <input type="date">
+                    <input type="number" placeholder="CVV">
+                </div>
+
+                <div class="radio">
+                    <input type="radio"> Visa
+                    <input type="radio"> Verve
+                    <input type="radio"> Master
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
