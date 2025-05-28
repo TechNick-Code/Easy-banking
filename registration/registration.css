@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em 0
 }
 
 .logo {
@@ -43,19 +44,20 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    width: 45%;
-    margin-top: 2em
+    gap: 14px;
+    width: 35%;
+    margin-top: 5em
 }
 
 .username {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 5%
 }
 
 .username input {
-    width: 21vw;
+    width: 100%;
 }
 
 .form-group {
@@ -63,6 +65,7 @@ body {
     flex-direction: column;
     text-align: left;
     margin-top: 1em;
+    width: 100%;
 }
 
 .form-group label {
@@ -73,7 +76,7 @@ body {
 }
 
 .form-group input {
-    padding: 15px;
+    padding: 20px 15px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
     font-size: 16px;
@@ -90,7 +93,7 @@ body {
 }
 
 .registration-button {
-    padding: 15px 24px;
+    padding: 20px;
     background-color: #3b82f6;
     color: white;
     border: none;
@@ -112,15 +115,22 @@ body {
     transform: translateY(0);
 }
 
-form p {
-    color: rgb(50, 50, 50);
-    margin: 1em 0
+form p,
+h2 {
+    color: rgb(6, 6, 6);
 }
 
 form p a {
     color: #3b82f6;
     text-decoration: none;
+}
 
+form p a:hover {
+    text-decoration:underline;
+}
+
+.login {
+    margin: 0 0 2em
 }
 
 /* @media (max-width: 768px) {
